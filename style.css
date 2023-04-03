@@ -36,7 +36,7 @@ body{
     align-items: center;
     background-color: white;
     font-size: 15px;
-    min-height: 100vmin;
+    height: 100vh;
 
 
 }
@@ -44,8 +44,10 @@ body{
 main{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     max-width: 1014px;
-    height: 498px;
+    height: 90%;
     transition: 0.6s ease-in;
 }
 main:hover{
@@ -66,12 +68,6 @@ section{
     transition: 1s ease-in-out;
     opacity: 0.88;
 
-
-}
-section:hover{
-    padding-left: 4em;
-    opacity: 1;
-    transition: 1s ease-in-out;
 
 }
 
@@ -146,11 +142,14 @@ section#luxury button{
 @media screen and (max-width: 840px) {
     main{
         display: flex;
+        justify-content: flex-start;
+        align-items: center;
         flex-direction: column;
         width: 375px;
+        height: 80%;
     }
     section{
-        max-height: 450px;
+        height: 100%;
         padding: 25px;
     }
     section:hover{
